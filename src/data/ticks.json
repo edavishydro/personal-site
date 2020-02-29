@@ -1,0 +1,106 @@
+{
+  "hardest": "5.10d",
+  "average": "5.10b",
+  "ticks": [
+    {
+      "routeId": 114557895,
+      "date": "2020-02-09",
+      "pitches": 1,
+      "notes": "",
+      "style": "Lead",
+      "leadStyle": "Redpoint",
+      "tickId": 118339454,
+      "userStars": 2,
+      "userRating": "5.10b"
+    },
+    {
+      "routeId": 114557932,
+      "date": "2020-02-01",
+      "pitches": 1,
+      "notes": "",
+      "style": "Lead",
+      "leadStyle": "",
+      "tickId": 118339456,
+      "userStars": 2,
+      "userRating": "5.8-"
+    },
+    {
+      "routeId": 109801599,
+      "date": "2019-05-05",
+      "pitches": 1,
+      "notes": "Broken foothold after bolt 4, had to get creative",
+      "style": "TR",
+      "leadStyle": "",
+      "tickId": 116832185,
+      "userStars": 3,
+      "userRating": ""
+    },
+    {
+      "routeId": 109801606,
+      "date": "2019-05-05",
+      "pitches": 1,
+      "notes": "",
+      "style": "TR",
+      "leadStyle": "",
+      "tickId": 116831137,
+      "userStars": 3,
+      "userRating": ""
+    },
+    {
+      "routeId": 105875736,
+      "date": "2018-11-17",
+      "pitches": 1,
+      "notes": "",
+      "style": "TR",
+      "leadStyle": "",
+      "tickId": 116106007,
+      "userStars": -1,
+      "userRating": ""
+    },
+    {
+      "routeId": 105875736,
+      "date": "2017-10-28",
+      "pitches": 1,
+      "notes": "Flash",
+      "style": "TR",
+      "leadStyle": "",
+      "tickId": 113760625,
+      "userStars": -1,
+      "userRating": ""
+    },
+    {
+      "routeId": 105737450,
+      "date": "2017-06-17",
+      "pitches": 1,
+      "notes": "",
+      "style": "Lead",
+      "leadStyle": "",
+      "tickId": 113171873,
+      "userStars": 2,
+      "userRating": "5.8+, PG13"
+    },
+    {
+      "routeId": 105866367,
+      "date": "2017-05-24",
+      "pitches": 2,
+      "notes": "Led first pitch",
+      "style": "Lead",
+      "leadStyle": "",
+      "tickId": 112965097,
+      "userStars": 4,
+      "userRating": "5.9"
+    },
+    {
+      "routeId": 105943342,
+      "date": "2017-05-24",
+      "pitches": 1,
+      "notes": "",
+      "style": "",
+      "leadStyle": "",
+      "tickId": 112965072,
+      "userStars": -1,
+      "userRating": ""
+    }
+  ],
+  "success": 1
+}
