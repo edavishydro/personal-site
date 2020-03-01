@@ -42,7 +42,7 @@ const TickTable = () => {
               </td>
               <td className="px-4 py-2">{ticks.node.rating}</td>
               <td className="px-4 py-2">
-                {ticks.node.type.length > 4
+                {ticks.node.type.length > 5
                   ? ticks.node.type.slice(0, -4)
                   : ticks.node.type}
               </td>
