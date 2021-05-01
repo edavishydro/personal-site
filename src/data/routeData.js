@@ -44,32 +44,32 @@ const RouteData = () => {
     "5.10b/c": "5.10c",
     "5.10+": "5.10d",
     "5.10d": "5.10d",
-    "5.11a": "5.11a",
-    "5.11b": "5.11b",
-    "5.11c": "5.11c",
-    "5.11d": "5.11d",
-    "5.12a": "5.12a",
-    V1: "V1",
-    "V1+": "V1",
-    "V1+ PG13": "V1",
-    V2: "V2",
-    "V2+": "V2",
-    V3: "V3",
-    "V3+": "V3",
-    V4: "V4",
-    "V4+": "V4",
-    V5: "V5",
-    "V5+": "V5",
-    V6: "V6",
-    "V6+": "V6",
-    V7: "V7",
-    "V7+": "V7"
+    // "5.11a": "5.11a",
+    // "5.11b": "5.11b",
+    // "5.11c": "5.11c",
+    // "5.11d": "5.11d",
+    // "5.12a": "5.12a",
+    // V1: "V1",
+    // "V1+": "V1",
+    // "V1+ PG13": "V1",
+    // V2: "V2",
+    // "V2+": "V2",
+    // V3: "V3",
+    // "V3+": "V3",
+    // V4: "V4",
+    // "V4+": "V4",
+    // V5: "V5",
+    // "V5+": "V5",
+    // V6: "V6",
+    // "V6+": "V6",
+    // V7: "V7",
+    // "V7+": "V7"
   };
 
   const makeTickRatings = (style = null) => {
     let tickRatings = [];
-    Object.keys(simpleRating).forEach(rating => {
-      data.allTickJsonJson.edges.forEach(tick => {
+    Object.keys(simpleRating).forEach((rating) => {
+      data.allTickJsonJson.edges.forEach((tick) => {
         if (style === "trad") {
           if (
             tick.node.type.slice(0, 4) === "Trad" &&
@@ -94,13 +94,13 @@ const RouteData = () => {
     return tickRatings;
   };
 
-  const makeFreqTable = tickRatings => {
+  const makeFreqTable = (tickRatings) => {
     const ratingRange = ratingOrder.slice(easyIndex, hardIndex + 1);
     let ratingFreq = {};
-    ratingRange.forEach(rating => {
+    ratingRange.forEach((rating) => {
       ratingFreq[rating] = 0;
     });
-    tickRatings.forEach(rating => {
+    tickRatings.forEach((rating) => {
       ratingFreq[rating] ? ratingFreq[rating]++ : (ratingFreq[rating] = 1);
     });
     return ratingFreq;
@@ -113,12 +113,12 @@ const RouteData = () => {
   };
 
   const ratingOrder = Object.values(simpleRating).filter(unique);
-  const easy = ratingOrder.filter(rating => rating === allRatings[0])[0];
+  const easy = ratingOrder.filter((rating) => rating === allRatings[0])[0];
   const hard = ratingOrder.filter(
-    rating => rating === allRatings[allRatings.length - 1]
+    (rating) => rating === allRatings[allRatings.length - 1]
   )[0];
-  const easyIndex = ratingOrder.findIndex(rating => rating === easy);
-  const hardIndex = ratingOrder.findIndex(rating => rating === hard);
+  const easyIndex = ratingOrder.findIndex((rating) => rating === easy);
+  const hardIndex = ratingOrder.findIndex((rating) => rating === hard);
   const freqTable = makeFreqTable(allRatings);
 
   const makeTradData = () => {
@@ -133,14 +133,14 @@ const RouteData = () => {
     return sportTable;
   };
 
-  const makeChartData = freqTable => {
+  const makeChartData = (freqTable) => {
     const allEntries = Object.entries(freqTable);
     const tradEntries = Object.entries(makeTradData());
     const sportEntries = Object.entries(makeSportData());
     let data = {
       labels: [],
       trad: { ratings: [], counts: [] },
-      sport: { ratings: [], counts: [] }
+      sport: { ratings: [], counts: [] },
     };
     for (const [rating] of allEntries) {
       data.labels.push(rating);
